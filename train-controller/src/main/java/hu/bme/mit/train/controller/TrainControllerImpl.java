@@ -37,7 +37,7 @@ public class TrainControllerImpl implements TrainController {
 
 	private void enforceSpeedLimit() {
 		if (referenceSpeed > speedLimit) {
-			referenceSpeed = speedLimit;
+			referenceSpeed -= speedLimit;
 		}
 	}
 
@@ -48,6 +48,6 @@ public class TrainControllerImpl implements TrainController {
 
 	public void emergencyBreak(){
 		setJoystickPosition(-3);
-	}...
+	}
 
 }
