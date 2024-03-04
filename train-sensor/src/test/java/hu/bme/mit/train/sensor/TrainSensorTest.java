@@ -4,27 +4,14 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import static org.mockito.Mockito.*;
+import com.google.common.collect.Table;
+import com.google.common.collect.HashBasedTable;
+import java.util.*;
+import hu.bme.mit.train.interfaces.TrainSensor;
 
 import java.beans.Transient;
+import java.time.Instant;
 
 public class TrainSensorTest {
-
-    public Table<Date, Integer, Integer> testTable = HashBasedTable.create();
-
-    @Before
-    public void before() {
-        // TODO Add initializations
-    }
-
-    @Test
-    public void ThisIsAnExampleTestStub() {
-        // TODO Delete this and add test cases based on the issues
-    }
-
-    @Test
-    public void TableTest(){
-        testTable.addRecord(System.date, 2, 1);
-        boolean recrodIsPresent = testTable.contains(System.date, 2, 1);
-        Assert.assertEquals(true, recrodIsPresent);
-    }
+    
 }

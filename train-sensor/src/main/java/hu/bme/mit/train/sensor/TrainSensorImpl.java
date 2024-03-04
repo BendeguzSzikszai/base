@@ -12,7 +12,7 @@ public class TrainSensorImpl implements TrainSensor {
 	private TrainController controller;
 	private TrainUser user;
 	private int speedLimit = 5;
-	Table<Date, Integer, Integer> tachnographTable = HashBasedTable.create();
+	public Table<String, Integer, Integer> tachnographTable = HashBasedTable.create();
 	
 
 	public TrainSensorImpl(TrainController controller, TrainUser user) {
@@ -31,7 +31,11 @@ public class TrainSensorImpl implements TrainSensor {
 		controller.setSpeedLimit(speedLimit);
 	}
 
-	public void addRecord(Date date, int joystickPosition, int referenceSpeed){
+	public Table getTable(){
+		return this.tachnographTable;
+	}
+
+	public void addRecord(String date, Integer joystickPosition, Integer referenceSpeed){
 		tachnographTable.put(date, joystickPosition, referenceSpeed);
 	}
 
