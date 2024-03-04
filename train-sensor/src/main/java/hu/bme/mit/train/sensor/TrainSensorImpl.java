@@ -4,6 +4,7 @@ import hu.bme.mit.train.interfaces.TrainController;
 import hu.bme.mit.train.interfaces.TrainSensor;
 import hu.bme.mit.train.interfaces.TrainUser;
 import com.google.common.collect.Table;
+import java.util.*;
 
 public class TrainSensorImpl implements TrainSensor {
 
