@@ -47,7 +47,7 @@ public class TrainControllerImpl implements TrainController {
 	}
 
 	public void emergencyBreak(){
-		setJoystickPosition(-3);
+		this.referenceSpeed = 0;
 	}
 
 }

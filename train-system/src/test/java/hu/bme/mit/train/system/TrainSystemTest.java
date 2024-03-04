@@ -51,8 +51,8 @@ public class TrainSystemTest {
 	}
 
 	@Test
-	public void emergencyBreak(){
+	public void emergencyBreakTest(){
 		controller.emergencyBreak();
-		Assert.assertEquals(-3, controller.getReferenceSpeed());
+		Assert.assertEquals(0, controller.getReferenceSpeed());
 	}	
 }
