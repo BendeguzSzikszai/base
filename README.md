@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 1
 ## 2
 ### 3
@@ -6,6 +7,13 @@
 =======
 
 >>>>>>> branch-A
+=======
+# 3
+## 2
+### 1
+
+
+>>>>>>> branch-B
 # Train Speed Controller
 
 This is a sample application for the verification laboratory.
