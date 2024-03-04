@@ -4,6 +4,7 @@ import hu.bme.mit.train.interfaces.TrainController;
 import hu.bme.mit.train.interfaces.TrainSensor;
 import hu.bme.mit.train.interfaces.TrainUser;
 import com.google.common.collect.Table;
+import com.google.common.collect.HashBasedTable;
 import java.util.*;
 
 public class TrainSensorImpl implements TrainSensor {
@@ -12,6 +13,7 @@ public class TrainSensorImpl implements TrainSensor {
 	private TrainUser user;
 	private int speedLimit = 5;
 	Table<Date, Integer, Integer> tachnographTable = HashBasedTable.create();
+	
 
 	public TrainSensorImpl(TrainController controller, TrainUser user) {
 		this.controller = controller;
