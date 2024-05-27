@@ -64,6 +64,6 @@ public class TrainControllerImpl implements TrainController {
 			public void run(){
 			followSpeed();
 		}
-	},0,1000);
+	},0,500);
 	}
 }
